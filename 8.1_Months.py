@@ -9,3 +9,7 @@ Once the user quits, print "Goodbye!"
 months = "JanFebMarAprMayJunJulAugSepOctNovDec"
 
 '''
+done = False
+month = input("enter a number for a month")
+
+

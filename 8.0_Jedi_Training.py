@@ -32,6 +32,14 @@ print(list_total)
 2.) Write a program that will strip the username (whatever is in front of the @ symbol)
 from any e-mail address and print it. First ask the user for their e-mail address.
 '''
+email = input("What is your email address?")
+username=""
+for letter in email:
+    if letter=="@":
+        break
+    else:
+        username+=letter
+print(username)
 
 
 
@@ -47,7 +55,7 @@ TEXT FORMATTING:
      '''
 score = 41237
 highscore = 1023407
-print("Score:      " + str(score) )
-print("High score: " + str(highscore) )
+print(f"Score:      {score:>9,}")
+print(f"High score: {highscore:,}")
 
 
