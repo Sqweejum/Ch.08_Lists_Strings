@@ -9,7 +9,16 @@ Once the user quits, print "Goodbye!"
 months = "JanFebMarAprMayJunJulAugSepOctNovDec"
 
 '''
+months = "JanFebMarAprMayJunJulAugSepOctNovDec"
 done = False
-month = input("enter a number for a month")
+while not done:
+    month = int(input("enter a number for a month. 13 to quit"))
+    if month==13:
+        break
+    else:
+        print(months[(month*3-3):(month*3)])
+
+
+
 
 
